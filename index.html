@@ -2,20 +2,26 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
         <title>Twitch Clips</title>
     </head>
     <body>
         <script src="tmi.min.js"></script>
         <script src="app.js"></script>
-
-        <iframe src="https://clips.twitch.tv/embed?clip=CoweringAffluentBoarDoritosChip-71_ylHoKaaQiHEOY&parent=olotolo.github.io" 
-            frameborder="0" 
-            allowfullscreen="true" 
-            scrolling="no" 
-            height="378" 
-            width="620">
-        </iframe>
-
+        <div id="clip">
+            <iframe src="https://player.twitch.tv/?channel=kyle&parent=olotolo.github.io" 
+                frameborder="0" 
+                allow="autoplay"
+                autoplay=true
+                allowfullscreen="true" 
+                scrolling="no" 
+                height="600" 
+                width="1068"
+                id="clipiframe"
+                >
+            </iframe>
+            <button id="nextBtn"onclick="next()">NEXT</button>
+        </div>
 
     </body>
 </html>

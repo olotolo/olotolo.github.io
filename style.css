@@ -1,0 +1,21 @@
+
+#clip{
+    width: 1068px;
+    height:600px;
+    display: block;
+    margin: 30px auto;
+    border:3px solid black;
+}
+#nextBtn {
+    width:120px;
+    height: 40px;
+    border:2px solid black;
+    color:purple;
+    background-color:darkgray;
+    display:block;
+    margin: 20px auto;
+}
+
+body {
+    background-color: gray;
+}
