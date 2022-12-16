@@ -1,5 +1,5 @@
 const client = new tmi.Client({
-	channels: [ 'kyle' ]
+	channels: [ 'olotolo_' ]
 });
 
 client.connect();
@@ -62,8 +62,10 @@ function next() {
 	console.log("list too short");
 }
 
-const myFunction = () => {
-	
-}; setInterval(myFunction, 1000); // Repeat myFunction every 2 seconds
+/*
+document.getElementById("clipiframe").onended = function() {test()};
 
-
+function test() {
+	console.log("it ended");
+}
+*/
