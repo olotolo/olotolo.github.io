@@ -1,5 +1,5 @@
 const client = new tmi.Client({
-	channels: [ 'kyle' ]
+	channels: [ 'olotolo_' ]
 });
 
 client.connect();
@@ -47,6 +47,8 @@ client.on('message', (channel, tags, message, self) => {
 		console.log("invalid twitch clip");
 	}
 });
+
+
 
 function next() {
 	if(links[0] != null) {
