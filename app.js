@@ -1,5 +1,5 @@
 const client = new tmi.Client({
-	channels: [ 'olotolo_' ]
+	channels: [ 'kyle' ]
 });
 
 client.connect();
@@ -62,10 +62,15 @@ function next() {
 	console.log("list too short");
 }
 
-/*
-document.getElementById("clipiframe").onended = function() {test()};
-
+setInterval(test, 1000);
+//   https://clips.twitch.tv/embed?clip=TangentialTsundereTapirCoolCat-dM7O8oCunwGFiKmu&parent=olotolo.github.io&autoplay=true
 function test() {
-	console.log("it ended");
+	
 }
-*/
+
+let curr_clip = document.createElement('video');
+curr_clip.addEventListener("ended", nextClip);
+
+function nextClip() {
+	console.log("play next clip");
+}
